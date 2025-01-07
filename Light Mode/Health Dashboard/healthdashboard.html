@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="sty.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap"
+      rel="stylesheet"
+    />
+    <title>Health Haven Dashboard</title>
+  </head>
+  <body>
+    <div class="border-container">
+      <div class="container">
+        <aside class="sidebar">
+          <div class="logo">
+            <img src="Logo.png" alt="Health Haven Logo" class="logo-img" />
+            <div class="logo-text">
+              <span class="health">Health</span>
+              <span class="haven">Haven</span>
+            </div>
+          </div>
+
+          <nav>
+            <ul>
+              <li class="active">
+                <a href="#"><span class="activee">Dashboard</span></a>
+              </li>
+              <li><a href="#">Appointments</a></li>
+              <li><a href="#">Health Records</a></li>
+              <li><a href="#">Medical Tests</a></li>
+              <li><a href="#">Settings</a></li>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">Profile Settings</a></li>
+              <li><a href="#">Logout</a></li>
+            </ul>
+          </nav>
+        </aside>
+        <main class="dashboard">
+          <header class="header-container">
+            <div class="welcome-section">
+              <h2>Your Wellness Snapshot!</h2>
+              <p class="welcome-text">Welcome Back, Kkay!</p>
+            </div>
+            <div class="header-right">
+              <div class="slider-container">
+                <input type="checkbox" class="slider-toggle" id="slider" />
+                <label for="slider" class="slider-label">
+                  <div class="slider-circle"></div>
+                </label>
+              </div>
+
+              <input type="text" class="search-bar" placeholder="Search..." />
+              <button class="notification-btn">
+                <img src="notification-icon.png" alt="Notifications" />
+              </button>
+              <img
+                src="User Profile Picture.png"
+                alt="User Picture"
+                class="user-pic"
+              />
+            </div>
+          </header>
+
+          <div class="main-container">
+            <div class="big-group">
+              <div class="group">
+                <div class="item fitness-activity">Fitness Activity</div>
+              </div>
+              <div class="group row">
+                <div class="smart-sync">
+                  <h4>Smart Sync</h4>
+                  <img
+                    src="watch-image.png"
+                    alt="Apple Watch Series 9"
+                    class="watch-image"
+                  />
+                  <h5>Apple Watch Series 9</h5>
+                  <p class="last-synced">Last synced 3 hours ago</p>
+                  <button class="disconnect-btn">Disconnect</button>
+                </div>
+                <div class="medication-reminders">
+                  <div class="medication-card">
+                    <div class="medication-image-container">
+                      <img
+                        src="medication-icon.png"
+                        alt="Medication Icon"
+                        class="medication-image"
+                      />
+                    </div>
+                    <div class="medication-text">
+                      <h2 class="medication-title">Medication Reminders</h2>
+                    </div>
+                  </div>
+                  <ul>
+                    <li>
+                      <label for="paracetamol"
+                        >Paracetamol - 1/2 before eating</label
+                      >
+                      <input type="checkbox" id="paracetamol" />
+                    </li>
+                    <li>
+                      <label for="clopidogrel"
+                        >Clopidogrel - 2/1 after
+                        eating&nbsp&nbsp&nbsp&nbsp&nbsp</label
+                      >
+                      <input type="checkbox" id="clopidogrel" />
+                    </li>
+                    <li>
+                      <label for="ticagrelor"
+                        >Ticagrelor - 3/3 after eating &nbsp
+                        &nbsp&nbsp&nbsp&nbsp</label
+                      >
+                      <input type="checkbox" id="ticagrelor" />
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="big-group">
+              <div class="group">
+                
+                  <div class="calendar-container">
+                    <div class="calendar-header">Calendar</div>
+                    <div class="buttons">
+                      <button class="btn">Previous</button>
+                      <button class="btn">Next</button>
+                    </div>
+                    <div class="calendar-grid">
+                      <!-- Calendar days -->
+                      <div class="day">31</div>
+                      <div class="day">1</div>
+                      <div class="day">2</div>
+                      <div class="day">3</div>
+                      <div class="day">4</div>
+                      <div class="day">5</div>
+                      <div class="day">6</div>
+                      <div class="day">7</div>
+                      <div class="day">8</div>
+                      <div class="day">9</div>
+                      <div class="day">10</div>
+                      <div class="day active">11</div>
+                      <div class="day">12</div>
+                      <div class="day">13</div>
+                      <div class="day">14</div>
+                      <div class="day">15</div>
+                      <div class="day">16</div>
+                      <div class="day">17</div>
+                      <div class="day">18</div>
+                      <div class="day">19</div>
+                      <div class="day">20</div>
+                      <div class="day">21</div>
+                      <div class="day">22</div>
+                      <div class="day">23</div>
+                      <div class="day">24</div>
+                      <div class="day">25</div>
+                      <div class="day">26</div>
+                      <div class="day">27</div>
+                      <div class="day">28</div>
+                      <div class="day">29</div>
+                      <div class="day">30</div>
+                    </div>
+                    <div class="appointments">
+                      <div class="appointment">
+                        <span>Dr. Anantha Kumar</span>
+                        <span>10:00 AM - 11:00 AM</span>
+                      </div>
+                      <div class="appointment">
+                        <span>Dr. Prem Vivan</span>
+                        <span>12:30 PM - 1:30 PM</span>
+                      </div>
+                    </div>
+                  </div>
+
+              </div>
+              <div class="circle-container">
+                <div class="circle-item">
+                  <img src="heart-rate-img.png" alt="Heart Rate Icon" />
+                  <p><b>98</b> bpm</p>
+                  <h3>Heart Rate</h3>
+                  <img src="normalheartrate.png" alt="Normal Heart Rate Icon" />
+                </div>
+                <div class="circle-item">
+                  <img src="blood-pressure-img.png" alt="Blood Pressure Icon" />
+                  <p><b>102</b>/72 mmHg</p>
+                  <h3>Blood Pressure</h3>
+                  <img src="normalbp.png" alt="Normal Blood Pressure Icon" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

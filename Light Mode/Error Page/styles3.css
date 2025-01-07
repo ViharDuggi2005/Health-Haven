@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url("Error Page BG.png") no-repeat center center fixed;
+  background-size: cover;
+  font-family: "Quicksand", sans-serif;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  height: 100vh;
+}
+
+.logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 75px;
+  height: auto;
+}
+
+.slider-container {
+  position: absolute;
+  bottom: 2%;
+  right: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70px;
+  height: 35px;
+  background-color: #7789ff;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.slider-toggle {
+  display: none;
+}
+
+.slider-label {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.slider-circle {
+  width: 25px;
+  height: 25px;
+  margin-left:8px;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.slider-toggle:checked + .slider-label {
+  background-color: #2f2e6b;
+}
+
+.slider-toggle:checked + .slider-label .slider-circle {
+  transform: translateX(30px);
+}
+
+.container {
+  margin-left:15%;
+  margin-bottom:6%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.text-section {
+  flex: 1;
+  color: #3B52E7;
+  padding-right: 20px;
+}
+
+.text-section h1 {
+  font-size: 70px;
+  line-height: 1.2;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.back-button {
+  background-color: white;
+  color: #3B52E7;
+  font-size: 30px;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-family: "Quicksand", sans-serif;
+  transition: all 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #4c4c97;
+  color: white;
+}
+
+.image-section {
+  flex: 1;
+  margin-right:5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-section img {
+  max-width: 110%;
+  height: auto;
+}
